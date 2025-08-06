@@ -1,4 +1,62 @@
+:root{
+  --blue:#00ACDC;
+;
+}
 body {
   font-family: 'Roboto', sans-serif;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin-left: 50px;
+}
+nav {
+  margin-right: 32px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav li:not(:first-child) {
+  margin-left: 30px;
+}
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  position:relative;
+  padding: 0;
+  text-align: center;
+}
+nav a:hover {
+  color: var(--blue);
+}
+nav a.is-active {
+  color: var(--blue);
+}
+nav a.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--blue)
+}
