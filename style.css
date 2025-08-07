@@ -12,7 +12,7 @@ body {
 }
 header {
   width: 100%;
-  padding: 0 50px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@ header {
   margin-left: 50px;
 }
 nav {
-  margin-right: 32px;
+  margin-right: 50px;
 }
 nav ul {
   list-style: none;
@@ -30,14 +30,15 @@ nav ul {
   padding: 0;
 }
 nav li:not(:first-child) {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 nav a {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 60px;
-  line-height: 40px;
+  line-height: 100%;
+  font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -54,9 +55,9 @@ nav a.is-active {
 nav a.is-active::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
+  border-radius: 8px;
+  top: 56px;
+  height: 4px;
+  width: 37px;
   background-color: var(--blue)
 }
