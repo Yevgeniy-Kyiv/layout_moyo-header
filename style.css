@@ -5,34 +5,34 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-* {
+html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-header {
+.header {
   width: 100%;
   padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logo {
+.header__logo-link {
   margin-left: 50px;
 }
-nav {
+.nav {
   margin-right: 50px;
 }
-nav ul {
+.nav__list {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
-nav li:not(:first-child) {
+.nav__item:not(:first-child) {
   margin-left: 20px;
 }
-nav a {
+.nav__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,18 +46,18 @@ nav a {
   padding: 0;
   text-align: center;
 }
-nav a:hover {
+.nav__link:hover {
   color: var(--blue);
 }
-nav a.is-active {
+.nav__link.is-active {
   color: var(--blue);
 }
-nav a.is-active::after {
+.nav__link.is-active::after {
   content: '';
   position: absolute;
   border-radius: 8px;
   top: 56px;
   height: 4px;
   width: 37px;
-  background-color: var(--blue)
+  background-color: var(--blue);
 }
